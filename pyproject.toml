@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "hypermodern-python-iitt"
+version = "0.1.0"
+description = "The hypermodern Python project iitt"
+authors = ["chris <chris@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/cd72/hypermodern-python-iitt"
+repository = "https://github.com/cd72/hypermodern-python-iitt"
+keywords = ["hypermodern"]
+
+# packages = [{include = "src/hypermodern_python_iitt"}]
+
+[tool.poetry.scripts]
+hypermodern-python-iitt = "hypermodern_python_iitt.console:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+flake8 = "^5.0.4"
+pytest = "^7.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
